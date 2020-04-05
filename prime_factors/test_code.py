@@ -6,7 +6,7 @@ from code import PrimeFactors
 class TestPrimeFactors(unittest.TestCase):
     def _test_prime_factors(self, input: int, expected: List[int]):
         obj = PrimeFactors(input)
-        assert obj.result == expected
+        self.assertEqual(obj.result, expected)
 
     def test_number_one(self):
         self._test_prime_factors(1, [])
