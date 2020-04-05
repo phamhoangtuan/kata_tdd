@@ -11,5 +11,3 @@
 - python 3
 
 - virtualenv
-
-- pytest
